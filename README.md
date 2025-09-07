@@ -21,7 +21,7 @@ An AI-powered CLI tool to automate coursework on the Mentari academic platform.
 - **CLI Interface:** Inquirer, Chalk
 - **AI:** Google Gemini API
 - **Authentication:** Custom License Server (Node.js, Express, Supabase)
-- **Build Process:** esbuild, pkg, rcedit
+- **Build Process:** esbuild, pkg
 
 ## How to Use (For End-Users)
 
