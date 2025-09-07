@@ -27,7 +27,7 @@ An AI-powered CLI tool to automate coursework on the Mentari academic platform.
 
 1. **Obtain a License Key:** This is a paid tool. To get a valid license key, please contact the author.
 
-2. **Download:** After purchasing, you will receive a link to download the latest `mentari-ai-p2c.zip` file from
+2. **Download:** Download the latest `mentari-ai-p2c.zip` file from
    the [Releases page](https://github.com/aritlhq/mentari-ai-p2c-public/releases).
 
 3. **Extract:** Unzip the downloaded file into a new folder anywhere on your computer.
