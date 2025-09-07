@@ -82,3 +82,7 @@ try {
 6. Your API Key successfuly generated.
    ![img7](images/img7.png)
 7. Copy and paste into `config.txt`
+
+## Copyright
+
+Copyright © 2025 [aritlhq](https://github.com/aritlhq). All Rights Reserved.
