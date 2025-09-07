@@ -23,7 +23,7 @@ An AI-powered CLI tool to automate coursework on the Mentari academic platform.
 
 ## How to Use (For End-Users)
 
-1. **Download:** Go to the [Releases page](https://github.com/aritlhq/mentari-ai-p2c/releases) and download the
+1. **Download:** Go to the [Releases page](https://github.com/aritlhq/mentari-ai-p2c-public/releases) and download the
    latest `mentari-ai-p2c.zip` file.
 
 2. **Extract:** Unzip the downloaded file into a new folder anywhere on your computer.
@@ -42,6 +42,40 @@ This project was created for educational and experimental purposes only. Using a
 violate your institution's academic integrity policy. The author is not responsible for any misuse of this software.
 Please use it responsibly.
 
-## License
 
-This project is licensed under the MIT License.
+## How to Get Mentari Token
+1. Open Mentari website and login to your account.
+2. Open Inspect Element (Right click > Inspect).
+<img width="354" height="378" alt="image" src="https://github.com/user-attachments/assets/7fce356e-5127-4c17-ba60-9eac3ddbb97e" />
+
+4. Copy this code.
+```
+try {
+  console.log(JSON.parse(localStorage.getItem('access'))?.[0]?.token || 'Token not found.');
+} catch {
+  console.error('Invalid access data.');
+}
+```
+5. Paste into Console.
+6. Click Enter.
+<img width="911" height="238" alt="image" src="https://github.com/user-attachments/assets/58371d65-1557-4ffe-acc9-aa02dd39802b" />
+
+7. Now, you have obtained your bearer token (`eyJhbGciOiJIUzI1NiIsInR5cCI6Ik...`).
+8. Paste it into `config.txt`. Set it as the value of the `MENTARI_TOKEN` variable.
+
+## How to Get Gemini Token
+1. Go to https://aistudio.google.com/prompts/new_chat
+2. Click `Get API Key`.
+<img width="1920" height="1000" alt="image" src="https://github.com/user-attachments/assets/11b3d38e-a0e7-49c2-9aa1-aff09cd1177c" />
+
+3. Click `Create API Key`.
+<img width="1909" height="921" alt="image" src="https://github.com/user-attachments/assets/3a00d956-e2cc-4e12-a0d4-715f1575b4e7" />
+
+4. Select a project from your existing Google Cloud projects.
+<img width="701" height="368" alt="image" src="https://github.com/user-attachments/assets/7f9d67db-0c41-4937-b895-9f785a981ddb" />
+
+6. Click `Create API Key in existing project`.
+7. Your API Key successfuly generated.
+<img width="878" height="336" alt="image" src="https://github.com/user-attachments/assets/5841dfec-8a78-4631-92c2-30adaef87656" />
+
+9. Copy and paste into `config.txt`
